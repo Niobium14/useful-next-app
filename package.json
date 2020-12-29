@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "serve": "concurrently \"yarn run dev\" \"yarn run mock\"",
+    "mock": "json-server -w db.json -p 4200 -d 500"
   },
   "dependencies": {
     "next": "10.0.4",

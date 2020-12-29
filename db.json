@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author": "Zuzanna Woodward",
+      "message": "Mollit ullamco in occaecat duis voluptate deserunt id in officia sunt irure aute aliqua. Ex minim id ad non cupidatat velit commodo. Qui nisi veniam proident officia nostrud nulla dolor aliquip nostrud velit nulla cupidatat eiusmod dolor. Aliqua dolor cillum tempor ea dolor ipsum voluptate proident mollit laboris culpa reprehenderit et. Consectetur commodo amet ut qui cillum nisi ut incididunt deserunt. Velit cupidatat consectetur consequat Lorem laborum magna adipisicing elit. Cupidatat ad excepteur ullamco aute Lorem labore ex proident veniam. Culpa esse commodo aliqua id enim excepteur incididunt nostrud cupidatat ad quis labore ad. Anim minim excepteur ipsum nostrud Lorem deserunt excepteur. Eiusmod aliqua incididunt laborum eu non magna in occaecat velit minim. Dolore dolor esse esse excepteur tempor id labore elit incididunt non laboris proident."
+    },
+    {
+      "id": 2,
+      "author": "Kester Donnelly",
+      "message": "Fugiat quis qui aliquip consequat aliquip in ex cupidatat sunt voluptate irure. Ea dolor est quis mollit fugiat exercitation ea adipisicing velit id voluptate ea laboris anim. Reprehenderit amet mollit do laborum ut fugiat irure Lorem officia dolor esse officia."
+    },
+    {
+      "id": 3,
+      "author": "Aydin Cobb",
+      "message": "Excepteur enim est tempor tempor cillum sint qui fugiat. In in amet enim ad. In proident do commodo qui anim dolore minim laborum exercitation deserunt aute pariatur aute."
+    },
+    {
+      "id": 4,
+      "author": "Taslima Clayton",
+      "message": "Consectetur eiusmod veniam quis dolore enim nostrud sit quis sunt eu occaecat labore sint. Qui duis ut magna irure. Id eiusmod duis est eu eiusmod esse et ad exercitation sint labore irure occaecat dolore. Aliqua voluptate adipisicing quis commodo culpa esse irure ex. Duis laborum veniam culpa fugiat ut Lorem in consectetur dolore dolore qui. Ea fugiat est occaecat consectetur laborum nisi qui. Laborum sit officia pariatur sint reprehenderit qui excepteur est voluptate do. Voluptate laboris exercitation id excepteur sunt minim qui minim ex id aliqua proident. Lorem fugiat dolor labore laborum ex est ex laborum Lorem."
+    }
+  ],
+
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" }
+}

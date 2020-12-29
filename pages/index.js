@@ -18,13 +18,13 @@ export default function Home() {
         In sit elit laboris adipisicing ad ex elit cupidatat.
       </p>
       <p className={styles.pages}>
-        All pages:{" "}
-        <Link className={styles.link} href={"/about"}>
-          about page
+        All pages:
+        <Link className={styles.link} href={"/profile"}>
+          profile page
         </Link>
-        ,{" "}
-        <Link className={styles.link} href={"/description"}>
-          description page
+        ,
+        <Link className={styles.link} href={"/mail"}>
+        mail page
         </Link>
       </p>
     </MainLayout>

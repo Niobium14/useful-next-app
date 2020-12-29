@@ -13,11 +13,11 @@ export function MainLayout({ children }) {
         <Link href={"/"}>
           <a className={styles.link}>Home</a>
         </Link>
-        <Link href={"/about"}>
-          <a className={styles.link}>About</a>
+        <Link href={"/profile"}>
+          <a className={styles.link}>Profile</a>
         </Link>
-        <Link href={"/description"}>
-          <a className={styles.link}>Description</a>
+        <Link href={"/mail"}>
+          <a className={styles.link}>Mail</a>
         </Link>
       </nav>
       <main>{children}</main>
