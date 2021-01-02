@@ -1,0 +1,118 @@
+/* HEADER NAV BAR (MAIN LAYOUT) */
+.header img {
+  margin-top: 30px;
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  float: left;
+  left: 50px;
+}
+.header nav {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  margin-top: 50px;
+  float: right;
+  text-align: center;
+}
+
+.header a {
+  color: white;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* FOOTER NAV BAR (MAIN LAYOUT) */
+.footer img {
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  float: left;
+  left: 50px;
+}
+.footer nav {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  margin-top: 30px;
+  float: right;
+  text-align: center;
+}
+.footer a {
+  color: white;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* SOCIAL LINKS */
+.social {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  margin-top: 30px;
+  float: right;
+  text-align: center;
+}
+.social img {
+  width: 2%;
+  margin-right: 20px;
+}
+
+/* GOOGLE MAP CASE */
+.cityMap {
+  margin-left: 80px;
+  width: 500px;
+  height: 300px;
+}
+.stayInTouch {
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stayInTouch h1 {
+  font-size: 30px;
+}
+.mainData {
+  display: grid;
+  grid-template-columns: repeat(1, 200px);
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.mainData input {
+  width: 375px;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #818181;
+  background-color: black;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+/* BUTTON */
+.button {
+  background-color: #4caf4f00; /* Green */
+  border: solid 1px rgb(170, 170, 170);
+  color: white;
+  padding: 10px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  outline: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #252525; /* Green */
+  color: white;
+  border: solid 1px #252525;
+}

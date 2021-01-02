@@ -1,32 +1,30 @@
-import Head from "next/head";
-import Router from "next/router";
-import Link from "next/link";
+import React from "react";
+import "react-multi-carousel/lib/styles.css";
 import styles from "../styles/Home.module.css";
-import { MainLayout } from "../components/MainLayout";
+import homeScreen from "../images/home-screen.jpg";
+import mainLogo from "../images/main-logo.png";
+import { connect } from "react-redux";
+import { AboutUs } from "../components/home/AboutUs";
+import { TopMenu } from "../components/home/TopMenu";
+import MainLayout from "../components/MainLayout";
+import { withGoogleMap, withScriptjs, GoogleMap } from "react-google-maps";
+import { GoogleMapCase } from "../components/home/GoogleMapCase";
 
-export default function Home() {
-  const aboutLink = () => {
-    Router.push("/about");
-  };
+function Home(props) {
   return (
-    <MainLayout>
-      <Head>
-        <title>Useful | NextJS App</title>
-      </Head>
-      <h1 className={styles.mainTitle}>Home Page</h1>
-      <p className={styles.description}>
-        In sit elit laboris adipisicing ad ex elit cupidatat.
-      </p>
-      <p className={styles.pages}>
-        All pages:
-        <Link className={styles.link} href={"/profile"}>
-          profile page
-        </Link>
-        ,
-        <Link className={styles.link} href={"/mail"}>
-        mail page
-        </Link>
-      </p>
+    <MainLayout className={styles.homePage}>
+      <img className={styles.imageScreen} src={homeScreen} />
+      <img className={styles.mainLogo} src={mainLogo} />
+      {AboutUs()}
+      {TopMenu(props)}
+      {GoogleMapCase()}
     </MainLayout>
   );
 }
+
+const mapStateToProps = (state) => ({
+  topMenu: state.homePage.topMenu,
+});
+
+export default connect(mapStateToProps)(Home);
+

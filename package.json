@@ -1,19 +1,25 @@
 {
-  "name": "next-app",
+  "name": "simple-pizza",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "serve": "concurrently \"yarn run dev\" \"yarn run mock\"",
-    "mock": "json-server -w db.json -p 4200 -d 500"
+    "start": "next start"
   },
   "dependencies": {
     "next": "10.0.4",
     "next-images": "^1.6.2",
-    "nextjs-progressbar": "^0.0.7",
+    "nextjs-progressbar": "0.0.7",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-google-maps": "^9.4.5",
+    "react-map-gl": "^6.0.2",
+    "react-multi-carousel": "^2.6.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.32.0"
   }
 }

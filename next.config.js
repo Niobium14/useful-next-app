@@ -1,2 +1,3 @@
-const widthImages = require("next-images");
-module.exports = widthImages({});
+// next.config.js
+const withImages = require("next-images");
+module.exports = withImages();

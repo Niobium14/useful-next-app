@@ -1,19 +1,20 @@
-// import App from 'next/app'
+import "../styles/globals.css";
+import NextNprogress from "nextjs-progressbar";
+import { Provider } from "react-redux";
+import store from "../redux/store";
 
-import NextNProgress from "nextjs-progressbar";
-
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <NextNProgress
-        color="#29D"
-        startPosition="0.3"
-        stopDelayMs="200"
+    <Provider store={store}>
+      <NextNprogress
+        color="white"
+        startPosition={0.3}
+        stopDelayMs={200}
         height="3"
-        options={{ easing: 'ease', speed: 500 }}
-
       />
       <Component {...pageProps} />
-    </>
+    </Provider>
   );
 }
+
+export default MyApp;

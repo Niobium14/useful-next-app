@@ -40,11 +40,17 @@ export default function Mail({ posts: serverRequest }) {
   );
 }
 
-Mail.getInitialProps = async ({ req }) => {
-  if (!req) {
-    return { posts: null };
-  }
-  const res = await fetch("http://localhost:4200/posts");
+// Mail.getInitialProps = async ({ req }) => {
+//   if (!req) {
+//     return { posts: null };
+//   }
+//   const res = await fetch("http://localhost:4200/posts");
+//   const posts = await res.json();
+//   return { posts };
+// };
+
+export async function getServerSideProps() {
+  const res = await fetch(`http://localhost:4200/posts`);
   const posts = await res.json();
-  return { posts };
-};
+  return { props: { posts } };
+}

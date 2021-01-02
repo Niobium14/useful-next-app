@@ -30,11 +30,17 @@ export default function Post({ post: serverRequest }) {
   );
 }
 
-Post.getInitialProps = async ({ query, req }) => {
-  if (!req) {
-    return { post: null };
-  }
+export async function getServerSideProps({ query }) {
   const res = await fetch(`http://localhost:4200/posts/${query.id}`);
   const post = await res.json();
-  return { post };
-};
+  return { props: { post } };
+}
+
+// Post.getInitialProps = async ({ query, req }) => {
+//   if (!req) {
+//     return { post: null };
+//   }
+//   const res = await fetch(`http://localhost:4200/posts/${query.id}`);
+//   const post = await res.json();
+//   return { post };
+// };
